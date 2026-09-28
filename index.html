@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glory Oyiboka | Data Analytics Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#f2f6f7;--ink:#14233a;--muted:#4b5b70;--line:#c9d5da;--accent:#1f7a6d;--hi:#f2b632;--card:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a2b;--ink:#e8eef4;--muted:#9fb0c3;--line:#26364d;--accent:#4cc2af;--card:#16253a}}
+:root[data-theme="dark"]{--bg:#0f1a2b;--ink:#e8eef4;--muted:#9fb0c3;--line:#26364d;--accent:#4cc2af;--card:#16253a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:1.05rem}
+.wrap{max-width:900px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.1rem 0;font-weight:600}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--accent);text-decoration:underline}
+a:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.sheet{border:1px solid var(--line);background:var(--card);margin-top:.5rem}
+.cols,.row{display:grid;grid-template-columns:2.2rem 1fr}
+.cols{background:var(--bg);border-bottom:1px solid var(--line);color:var(--muted);font-size:.8rem}
+.cols span,.rn{padding:.25rem .5rem;border-right:1px solid var(--line)}
+.cols div{display:flex}
+.cols div span{flex:1}
+.rn{color:var(--muted);font-size:.8rem;background:var(--bg);text-align:center;padding:.25rem 0}
+.cell{padding:1.5rem 1.25rem;border-bottom:1px solid var(--line)}
+.cell:last-child{border-bottom:0}
+.cell.sel{outline:3px solid var(--accent);outline-offset:-3px}
+h1{font-size:clamp(2.6rem,10vw,5.2rem);line-height:1;margin:0 0 .75rem;font-weight:800;letter-spacing:-.03em}
+.sub{font-size:1.25rem;margin:0;max-width:34rem;color:var(--muted)}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink);border-radius:4px}
+.btn.primary{background:var(--hi);border-color:var(--hi);color:#14233a}
+.btn:hover{transform:translateY(-2px)}
+section{padding:3.5rem 0 0}
+h2{font-size:1.9rem;margin:0 0 1rem;letter-spacing:-.02em}
+p{max-width:38rem;margin:0 0 1rem}
+.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.skills li{border:1px solid var(--line);background:var(--card);padding:.45rem .9rem;border-radius:999px}
+.proj{display:grid;gap:1rem}
+.p{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--accent);padding:1.1rem 1.25rem}
+.p h3{margin:0 0 .25rem;font-size:1.2rem}
+.p p{margin:0;color:var(--muted)}
+.tag{font-size:.9rem;font-weight:600;color:var(--accent)}
+footer{padding:3.5rem 0 3rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+
+<header class="sheet" aria-label="Introduction">
+<div class="cols" aria-hidden="true"><span></span><div><span>A</span><span>B</span><span>C</span></div></div>
+<div class="row"><div class="rn" aria-hidden="true">1</div>
+<div class="cell sel"><h1>Glory Oyiboka</h1><p class="sub">Data analyst and administrator from Delta State, Nigeria. I turn records, reports and spreadsheets into clear answers.</p>
+<div class="btns"><a class="btn primary" href="#projects">See my projects</a><a class="btn" href="https://github.com/efegloria24">GitHub</a></div></div></div>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p>I started in administration, working as an office secretary and administrative assistant. Day to day that meant data entry, keeping financial records and building spreadsheets people could trust.</p>
+<p>At Prevailing Child Academy I support the school with administrative and financial work, including income and expense reports. I bring that same care to data analysis.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<ul class="skills">
+<li>Data analysis</li><li>Power BI</li><li>Spreadsheets</li><li>Data entry</li><li>Financial record-keeping</li><li>Income and expense reporting</li><li>Dashboards</li><li>Website building</li><li>Administrative support</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="proj">
+<article class="p"><h3>Sales Performance Analysis</h3><span class="tag">Power BI project</span><p>A dashboard analyzing ₦2.33B in revenue and 2,098 customers across 5 cities. Laptop A13 was the top product by profit, Peter the top sales rep by revenue, and Lagos carried the highest cost of goods sold. Overall profit margin came to ~20%.</p></article>
+<article class="p"><h3>Product Sales Dashboard</h3><span class="tag">Power BI project</span><p>A dashboard covering 3M in revenue, 932K profit and 250 customers, a 31% profit margin. Apple and Lenovo led on profit while Dell trailed, white was the top-selling product color, and customer growth held steady from January through June.</p></article>
+<article class="p"><h3>TechNova Gadgets: Discount Effectiveness</h3><span class="tag">Individual project, InsightsCircle</span><p>An analysis of whether discounts actually worked for an electronics retailer.</p></article>
+<article class="p"><h3>Logistics Operations Database</h3><span class="tag">Capstone</span><p>An open-ended analysis of logistics operations data, finishing in a dashboard.</p></article>
+<article class="p"><h3>WorkHive</h3><span class="tag">Built with the Builders Oasis dev team</span><p>A job-matching platform connecting job seekers with opportunities.</p></article>
+<article class="p"><h3>This portfolio website</h3><span class="tag">Built with Claude, an AI assistant</span><p>I planned and built this site by directing an AI assistant, choosing the content, layout and wording myself.</p></article>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Want to work together or see the code behind my projects? Email me or find me on GitHub.</p>
+<div class="btns" style="margin-top:0"><a class="btn primary" href="mailto:efegloria24@gmail.com">efegloria24@gmail.com</a><a class="btn" href="https://github.com/efegloria24">github.com/efegloria24</a></div>
+</section>
+
+<footer>&copy; 2026 Glory Oyiboka</footer>
+</div>
+</body>
+</html>
